@@ -14,9 +14,9 @@ This is my repo for **STATS 220**.
 
 ## Useful Links
 
-Check out [University of Auckland](https://www.auckland.ac.nz/) for more information about my studies.
+Check out [University of Auckland](https://www.auckland.ac.nz/) for more information about my college.
 
-## How I feel about my university studies
+## Let's have a snack.
 
 ![My GIF](https://s1.aigei.com/src/img/gif/8b/8bd443cf145e44b78c877ab05be158d8.gif?imageMogr2/auto-orient/thumbnail/!282x282r/gravity/Center/crop/282x282/quality/85/%7CimageView2/2/w/282&e=2051020800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:n2VH8x7aFRCVCRwiRUkS_iLctD4=)
 
