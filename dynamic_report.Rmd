@@ -61,7 +61,12 @@ summary_values <- latest_data %>%
 summary_values
 
 ```
+## 1.1 Summary of Watching Behavior
 
+我们总共记录了 `r summary_values$total_obs` 次观看。
+每次观看时长的最小值是 `r summary_values$min_minutes` 分钟，
+最大值是 `r summary_values$max_minutes` 分钟；
+平均下来大约 `r round(summary_values$avg_minutes, 1)` 分钟都花在了 YouTube 上。
 
 
 
@@ -106,5 +111,7 @@ best_pet <- pets[1]
 ```
 
 The best pet to have is a `r best_pet` of course!
+
+![](https://c.tenor.com/-qBsG1HwR4oAAAAC/tenor.gif)
 
 ![](https://c.tenor.com/-qBsG1HwR4oAAAAC/tenor.gif)
