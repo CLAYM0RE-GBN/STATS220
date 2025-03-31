@@ -23,7 +23,7 @@ p {
   margin: 0.8em 0;
 }
 img {
-  max-width: 300px; /* 控制图片显示宽度 */
+  max-width: 900px; /* 控制图片显示宽度 */
   height: auto;
   margin-bottom: 1em;
 }
