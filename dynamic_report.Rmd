@@ -66,12 +66,6 @@ summary_values <- latest_data %>%
 summary_values
 
 ```
-## 1.1 Summary of Watching Behavior
-
-We have recorded a total of `r summary_values$total_obs` viewing sessions.
-The shortest session lasted `r summary_values$min_minutes` minutes,
-the longest session lasted `r summary_values$max_minutes` minutes;
-on average, about `r round(summary_values$avg_minutes, 1)` minutes were spent on YouTube.
 
 
 
@@ -90,8 +84,6 @@ ggplot(latest_data, aes(x = main_type)) +
   ) +
   theme_minimal()
 ```
-## 1.2 Bar Chart: Distribution by Main Video Type
-As can be seen, the bar chart above reflects the distribution of the types of videos watched.
 
 
 
@@ -107,8 +99,6 @@ ggplot(latest_data, aes(x = day_period)) +
   ) +
   theme_minimal()
 ```
-## 1.3 Bar Chart: Distribution by Time of Day
-This chart shows everyone's viewing habits at different times of the day.
 
 
 
