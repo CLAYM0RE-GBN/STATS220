@@ -109,10 +109,10 @@ This chart shows everyone's viewing habits at different times of the day.
 
 ```{r}
 pets <- c("cat", "dog", "turtle", "rabbit")
-best_pet <- pets[1]
+best_pet <- pets[2]
 
 ```
 
 The best pet to have is a `r best_pet` of course!
 
-![](https://c.tenor.com/-qBsG1HwR4oAAAAC/tenor.gif)
+![](https://s1.aigei.com/src/img/gif/d9/d97ba9819f954d95b83744386f09b256.gif?e=2051020800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:fBbuCH6wC9cIIeutkWFXqjIEsOo=)
