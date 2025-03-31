@@ -30,6 +30,8 @@ img {
 
 ```
 
+1. YouTube Watching Analysis In this report, we will import our own collection of YouTube video viewing log data.
+and use R to draw histograms and calculate some summary statistics.
 ```{r}
 # (A) 加载 tidyverse
 library(tidyverse)
@@ -60,6 +62,11 @@ summary_values
 
 ```
 
+
+
+
+
+
 ```{r}
 ggplot(latest_data, aes(x = main_type)) +
   geom_bar(fill = "steelblue") +
@@ -69,9 +76,13 @@ ggplot(latest_data, aes(x = main_type)) +
     y = "Count"
   ) +
   theme_minimal()
+```
+As can be seen, the bar chart above reflects the distribution of the types of videos watched.
 
 
 
+
+```{r}
 ggplot(latest_data, aes(x = day_period)) +
   geom_bar(fill = "tomato") +
   labs(
@@ -81,7 +92,7 @@ ggplot(latest_data, aes(x = day_period)) +
   ) +
   theme_minimal()
 ```
-
+This chart shows everyone's viewing habits at different times of the day.
 
 
 
