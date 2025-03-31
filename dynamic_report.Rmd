@@ -62,7 +62,7 @@ summary_values <- latest_data %>%
     total_obs   = n()
   )
 
-# (E) 打印汇总表（仅用于检查，如果不想在成品里看表格，可注释掉）
+# (E) 打印汇总表
 summary_values
 
 ```
