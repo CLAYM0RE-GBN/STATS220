@@ -9,17 +9,35 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
 ```
 
 ```{css}
+/* 自定义一些简单的页面样式 */
+body {
+  font-family: "Helvetica", sans-serif; 
+  margin: 20px;
+}
+h1, h2, h3, h4 {
+  color: #2c3e50;
+  margin-top: 1.5em;
+}
+p {
+  line-height: 1.5;
+  margin: 0.8em 0;
+}
+img {
+  max-width: 300px; /* 控制图片显示宽度 */
+  height: auto;
+  margin-bottom: 1em;
+}
 
 ```
 
 ```{r}
-# 1. Load tidyverse
+# (A) 加载 tidyverse
 library(tidyverse)
 
-# 2. Import data from Google Sheets CSV
+# (B) 导入数据
 logged_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTWuiHKezF7pWlcRSSSmoSOws0JEdIth5NqWsm1OurOrJQyKVBqBClSYf1pTJ-Z51zONqd6F2VJewlk/pub?output=csv")
 
-# 3. Renaming columns
+# (C) 重命名列
 latest_data <- logged_data %>%
   rename(
     time_stamp = TIME,
@@ -28,8 +46,7 @@ latest_data <- logged_data %>%
     minutes    = `How many minutes a day do you spend watching videos?`
   )
 
-
-# 4. Summary Values
+# (D) 计算汇总值
 summary_values <- latest_data %>%
   summarise(
     min_minutes = min(minutes, na.rm = TRUE),
@@ -38,12 +55,12 @@ summary_values <- latest_data %>%
     total_obs   = n()
   )
 
-print(summary_values)
+# (E) 打印汇总表（仅用于检查，如果不想在成品里看表格，可注释掉）
+summary_values
 
+```
 
-# 5. Bar Charts
-
-# Chart 1: Distribution by main_type
+```{r}
 ggplot(latest_data, aes(x = main_type)) +
   geom_bar(fill = "steelblue") +
   labs(
@@ -53,7 +70,8 @@ ggplot(latest_data, aes(x = main_type)) +
   ) +
   theme_minimal()
 
-# Chart 2: Distribution by day_period
+
+
 ggplot(latest_data, aes(x = day_period)) +
   geom_bar(fill = "tomato") +
   labs(
